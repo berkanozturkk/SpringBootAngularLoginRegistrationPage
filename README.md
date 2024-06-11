@@ -43,12 +43,4 @@ This repository contains a project that implements a login and registration page
   ng serve
   ```
 
-#### Contributing
-Contributions are welcome. Please fork the repository and create a pull request with detailed information about your changes.
 
-#### License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-Feel free to customize this README to better suit your project's needs.
