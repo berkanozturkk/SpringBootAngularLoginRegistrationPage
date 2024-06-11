@@ -1,0 +1,98 @@
+body{
+    margin: 0; 
+    padding: 0; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("src/assets/pexels.jpg");
+}
+label{
+    color: #070707;
+}
+img{
+    height: 15vh;
+    color: #fff;
+    margin-bottom: 40px;
+
+}
+  
+  
+  .form-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    height: 10hv;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(18, 93, 192, 0.3);
+  }
+  h1{
+    color: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #eee;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color:  rgba(255, 255, 255, 0.993); ;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 15px;
+    background-color: rgba(19, 20, 20, 0.3);
+    color: #fff;
+    border: 1px solid #ddd;
+    border-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  input[type="button"] {
+    padding: 10px 15px;
+    background-color: rgba(19, 20, 20, 0.3);
+    color: #fff;
+    border: 1px solid #ddd;
+    border-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .profile-picture-url {
+    word-wrap: break-word;
+  }

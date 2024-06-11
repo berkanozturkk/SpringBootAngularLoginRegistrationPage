@@ -1,0 +1,24 @@
+<div class="box-container" align="center">
+    <div class="form-center">
+        <h1> Account Login</h1>
+        <img src="assets/users.png" alt="Avatar">
+        
+        <form action="homepage" method="post" enctype="multipart/form-data">
+            
+            <div>
+            <label for="username"><strong>Username:</strong></label>
+            <input type="text" id="username" name="username" required [(ngModel)]="model.username"><br>
+            </div>
+            <div>
+            <label for="password"><strong>Password:</strong></label>
+            <input type="password" id="password" name="password" required [(ngModel)]="model.password"><br>
+            </div>
+            <div>
+            <input type="submit" value="Login" (click)="loginUser()">
+            </div>
+            <div>
+            <input type="button" value="Register" (click)="routeRegister()">
+            </div>
+        </form>
+    </div>
+    </div>

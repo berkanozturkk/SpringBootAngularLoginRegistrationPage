@@ -1,0 +1,78 @@
+
+body {
+    text-align: center;
+    padding: 200px 0;
+    background-image: url("src/assets/background.jpg");
+    opacity: 1;
+    height: 100vh;
+}
+
+
+.card {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    display:inline-flex;
+    isolation: isolate;
+}
+
+input[type="button"] {
+    transition-duration: 0.3s;
+    background-color: #f14c4c;
+    padding: 8px 12px;
+    color: #ffffff;
+    border: 1px solid #ddd;
+    border-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #ce0606;
+  }
+
+h1 {
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.topnav {
+    margin-top: 50px;
+}
+
+.topnav input[type="text"] {
+    height: 60px;
+    width: 400px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+    isolation: isolate;
+}
+
+.topnav button {
+    transition-duration: 0.3s;
+    background-color: #44a8eb;
+    color: white;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.topnav button:hover {
+    background-color: #1d89e7;
+}
