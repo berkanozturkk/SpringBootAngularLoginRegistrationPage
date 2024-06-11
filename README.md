@@ -5,10 +5,14 @@
 #### Overview
 This repository contains a project that implements a login and registration page using Spring Boot for the backend and Angular for the frontend. It showcases a secured and modern web application with user authentication.
 
-Features
+#### Features
+
 🚀 User Registration: Sign up with necessary details.
+
 🔐 User Login: Log in with your credentials.
+
 🛠️ Spring Boot Backend: Manages user data and authentication.
+
 🌐 Angular Frontend: Responsive and interactive UI.
 
 #### Technologies
