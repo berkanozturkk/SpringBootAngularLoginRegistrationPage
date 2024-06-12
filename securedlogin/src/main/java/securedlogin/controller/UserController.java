@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import securedlogin.repo.UserRepo;
-import securedlogin.service.ReviewService;
 
 import java.util.List;
 import java.util.Map;
@@ -27,7 +26,7 @@ public class UserController {
     }
 
     @PostMapping("user/register")
-    public int userRegist(@RequestBody Map<String, String> payload) {
+    public ResponseEntity<Integer> userRegist(@RequestBody Map<String, String> payload) {
         String submittedusername = payload.get("username");
         String submittedemail = payload.get("email");
         String submittedpassword = payload.get("password");
@@ -35,16 +34,9 @@ public class UserController {
         if (flag == 0) {
             flag = 1; // Başarılı kayıt durumunda 0 döndüğünde frontend için 1 yapıyoruz
         }
-        return flag;
+        return ResponseEntity.ok(flag);
     }
 
 
-    @Autowired
-    private ReviewService reviewService;
-
-    @GetMapping("reviews")
-    public List<String> getReviews(@RequestParam String filmName) {
-        return reviewService.getFilmReviews(filmName);
-    }
 }
 

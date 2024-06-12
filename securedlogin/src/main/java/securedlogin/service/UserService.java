@@ -1,5 +1,6 @@
 package securedlogin.service;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import securedlogin.dbcon.Dbconnection;
 import securedlogin.repo.UserRepo;
@@ -21,7 +22,7 @@ public class UserService implements UserRepo {
     public int logincheck(String username, String password) {
         int flag = 0;
         try {
-            PreparedStatement stmt = connection.prepareStatement("SELECT * FROM users WHERE username = ? AND password = ?");
+            PreparedStatement stmt = connection.prepareStatement("SELECT * FROM usertable WHERE BINARY username = ? AND BINARY password = ?");
             stmt.setString(1, username);
             stmt.setString(2, password);
             ResultSet rs = stmt.executeQuery();
@@ -47,7 +48,7 @@ public class UserService implements UserRepo {
     public int registcheck(String username, String email, String password) {
 
         try{
-            PreparedStatement stmt = connection.prepareStatement("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+            PreparedStatement stmt = connection.prepareStatement("INSERT INTO usertable (username, email, password) VALUES (?, ?, ?)");
             stmt.setString(1,username);
             stmt.setString(2,email);
             stmt.setString(3,password);

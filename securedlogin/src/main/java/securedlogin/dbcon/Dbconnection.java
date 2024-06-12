@@ -14,7 +14,7 @@ public class Dbconnection {
         }
         else{
             String driver = "com.mysql.cj.jdbc.Driver";
-            String url = "jdbc:mysql://localhost:3306/userdb";
+            String url = "jdbc:mysql://localhost:3306/users";
             String user = "root";
             String password = "admin123.";
 
